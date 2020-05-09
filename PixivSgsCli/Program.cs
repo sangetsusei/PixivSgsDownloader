@@ -1,12 +1,21 @@
 ﻿using System;
+using CommandDotNet;
 
 namespace PixivSgsCli
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+             return new AppRunner<MainEntry>()
+                .UseDefaultMiddleware()
+                .Run(args);
         }
+
+    }
+
+    class MainEntry
+    {
+
     }
 }
