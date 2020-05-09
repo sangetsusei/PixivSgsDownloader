@@ -1,0 +1,2 @@
+# PixivSgsDownloader
+应用以下载Pixiv上的三月精插画
